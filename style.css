@@ -4,17 +4,92 @@ html, body {
 }
 
 .header{
+  border: 1px solid black;
+  background: #61A0AF;
   color: black;
+  grid-area: header;
 }
 
 .nav{
+  border: 1px solid black;
+  background:#96C9DC;
   color: black;
+  grid-area: nav;
 }
 
 .main{
+  border: 1px solid black;
+  background:#F5D491;
   color: black;
+  grid-area: main;
 }
 
 .footer{
+  border: 1px solid black;
+  background: #F9B9B7;
   color: black;
+  grid-area: footer;
+}
+
+.grid{
+  border: 1px solid black;
+  height: 600px;
+  width: 700px;
+  display: grid;
+  grid-template-columns: 100px 300px 300px;
+  grid-template-rows: 100px 400px 100px;
+  grid-template-areas:
+    "  header header header"
+    "  nav main main  "
+    "  footer footer footer";
+}
+.grid{
+  margin-left:33%;
+  margin-right:33%;
+}
+img{
+  width: 100px;
+  height: 100px;
+}
+
+body{
+  background:#640000;
+}
+
+h1{
+  font-family:monospace;
+  margin-right:225px;
+  float: right; 
+}
+
+
+.p{
+  text-indent:10px;
+}
+
+ol.color, ul.color{
+  color: green;
+}
+
+table{
+  background: black;
+  margin-left:150px;
+  width: 300px;
+  height: 300px;
+  font-size: 1.5em;
+  font-family: serif;
+}
+
+th{
+   background: white;
+   color: black;
+}
+
+td {
+  background: gray;
+  color: white;
+}
+
+.yellow{
+  background: yellow;
 }
