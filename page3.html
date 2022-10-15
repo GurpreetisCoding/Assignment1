@@ -21,9 +21,9 @@
 
   <main class="main">
     <h2> Registration Form </h2>
-    <form action="https://www.w3schools.com/html/html_form_attributes.asp" method="post">
+    <form name="theForm" action="https://webdevbasics.net/scripts/yoga.php" onsubmit="return validateForm()" method="post">
       <label for="fname">First name: </label><br>
-      <input type="text" id="fName" name="fName" placeholder="Input first name here" maxlength="50" size="50"><br>
+      <input type="text" id="fname" name="fname" placeholder="Input first name here" maxlength="50" size="50"><br>
 
       <label for="lName">Last name: </label><br>
       <input type="text" id="lName" name="lName" placeholder="Input last name here" maxlength="50" size="50"><br>
@@ -35,10 +35,11 @@
       <input type="email" id="email" name="email" placeholder="Input valid email here"><br>
 
       <label for="tel">Phone Number: </label><br>
-      <input type="tel" id="tel" name="tel" placeholder="###-###-####"><br>
+      <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="###-###-####"><br>
       <br>
       <label for="user">Desired Username: </label><br>
-      <input type="text" id="user" name="user" placeholder="Input username here" minlength="5" maxlength="10" required><br>
+      <input type="text" id="user" name="user" placeholder="Input username here" minlength="5" maxlength="10"
+        required><br>
 
       <label for="pass">Password: </label>
       <input type="password" id="pass" name="pass" minlength="8" required>
@@ -47,14 +48,6 @@
       <input type="password" id="ckpass" name="ckpass" minlength="8" required><br>
       <br>
       <input type="submit">
-
-
-
-
-
-
-
-
     </form>
   </main>
 
@@ -66,6 +59,7 @@
     </p>
 
   </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
