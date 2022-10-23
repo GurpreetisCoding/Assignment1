@@ -31,23 +31,27 @@ html, body {
   grid-area: footer;
 }
 
+.aside{
+  border: 1px solid black;
+  background: #f6d992;
+  color: black;
+  grid-area: aside;
+}
+
 .grid{
   border: 1px solid black;
-  height: 600px;
-  width: 700px;
+  height: 100%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 100px 300px 300px;
-  grid-template-rows: 100px 400px 100px;
+  grid-template-columns: 15% 44% 40%;
+  grid-template-rows: 15% 75% 9%;
   grid-template-areas:
     "  header header header"
-    "  nav main main  "
+    "  nav main aside  "
     "  footer footer footer";
 }
-.grid{
-  margin-left:33%;
-  margin-right:33%;
-}
-img{
+
+.banner{
   width: 100px;
   height: 100px;
 }
@@ -58,7 +62,7 @@ body{
 
 h1{
   font-family:monospace;
-  margin-right:225px;
+  margin-right:40%;
   float: right; 
 }
 
@@ -73,9 +77,8 @@ ol.color, ul.color{
 
 table{
   background: black;
-  margin-left:150px;
-  width: 300px;
-  height: 300px;
+  width: 20%;
+  height: 20%;
   font-size: 1.5em;
   font-family: serif;
 }
@@ -92,4 +95,70 @@ td {
 
 .yellow{
   background: yellow;
+}
+
+.canvasSize{
+  height: 200px;
+  width: 200px;
+}
+
+.frameSize{
+  margin: 5%;
+  height: 50%;
+  width: 90%;
+}
+
+.svgSize{
+  width: 100px ;
+  height: 100px;
+}
+
+ul,li{
+  margin:0;
+  padding:0;
+  list-style: none;
+  }
+
+.wolve{
+  width:70%;
+  height:90%;
+}
+
+@media screen and (max-width: 800px){
+  .grid{
+    grid-template-columns: 100%;
+    grid-template-rows: 12% 8% 35% 35% 10%;
+    grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer"
+  }
+
+  .formScroll{
+    overflow-y: scroll;
+    height: 200px;
+  }
+  .header{
+    background:#04E762;
+  }
+  .nav{
+    background:#F5B700;
+  }
+  .main{
+    background:#00A1E4;
+  }
+  .aside{
+    background:#DC0073;
+  }
+  .footer{
+    background:#89FC00;
+  }
+  ul{
+  list-style: none;
+  } 
+  li{
+  display: inline;
+  }
 }

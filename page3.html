@@ -8,19 +8,22 @@
 <body class=grid>
   <header class="header">
     <h1> Assignment 1 </h1>
-    <img src="image/banner.jpg">
+    <img class="banner" src="image/banner.jpg">
   </header>
 
   <nav class="nav">
-    <a href="index.html">Home</a><br>
-    <a href="page1.html">Page 1</a><br>
-    <a href="page2.html">Page 2</a><br>
-    <a href="page3.html">Page 3</a><br>
-    <a href="https://www.columbusstate.edu/">CSU's Main Page</a><br>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="page1.html">Page 1</a></li>
+    <li><a href="page2.html">Page 2</a></li>
+    <li><a href="page3.html">Page 3</a></li>
+    <li><a href="https://www.columbusstate.edu/">CSU's Main Page</a><br></li>
+    </ul>
   </nav>
 
   <main class="main">
     <h2> Registration Form </h2>
+    <div class="formScroll">
     <form name="theForm" action="https://webdevbasics.net/scripts/yoga.php" onsubmit="return validateForm()" method="post">
       <label for="fname">First name: </label><br>
       <input type="text" id="fname" name="fname" placeholder="Input first name here" maxlength="50" size="50"><br>
@@ -49,7 +52,15 @@
       <br>
       <input type="submit">
     </form>
+    </div>
   </main>
+
+  <aside class="aside">
+  <svg class="svgSize">
+    <circle cx="50" cy="50" r="40" stroke="#DB4914" stroke-width="4" fill="#E89020" />
+  </svg>
+    <img src="image/Dragonball.png" class="banner" alt="">
+  </aside>
 
   <footer class="footer">
     <p>
